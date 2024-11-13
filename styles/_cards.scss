@@ -133,13 +133,17 @@
     @include m.d-flex(start, start , nowrap, column, 0 , 35px);
 
     &__avatar {
-        margin: 20px 0 0 30px;
+        position: relative;
+        right: -42px;
+        bottom: -27px;
+        // margin: 20px 0 0 30px;
         border-radius: 50%;
+ 
     }
 
     &__quote {
         @include m.font(20px, 400, v.$color_white);
-        margin: 0 45px 0 30px;
+        margin: 0 45px 0 40px;
         line-height: 1.4;
     }
 
@@ -150,6 +154,8 @@
 
         &__avatar {
            height: 30px;
+           bottom: -15px;
+           right: -27px;
 ;
         }
 
